@@ -1,0 +1,77 @@
+Pseudocode Challenge
+
+
+1. Algoritma Menghitung Resultan Gaya
+
+    Masukkan nilai Massa Benda (m = 600kg)
+    Masukkan nilai Percepatan Benda (a = 2m/s2)
+    Hitung Resultan Gaya menggunakan rumus ΣF = m x a (ΣF = 600kg x 2m/s2)
+    Tampilkan nilai Resultan Gaya (ΣF = 1200 kg.m/s2) sebagai output (keluaran)
+
+
+    Pseudocode
+
+    STORE "massa (m)" with 600kg
+    STORE "percepatan (a)" with 2m/s2
+    STORE "ΣF" without any value
+
+    CALCULATE "massa" times "percepatan" use "ΣF = m x a"
+    SET "ΣF" value with calculation result
+
+    DISPLAY result "ΣF = 1200 kg.m/s2"
+
+
+2. Algoritma Tahun Kabisat
+
+    Inputkan Tahun
+    Lakukan pembagian tahun yang sudah diinputkan dengan angka 4
+    Jika Tahun % 4 menghasilkan sisa bagi bukan 0, maka tampilkan Tahun Bukan Kabisat
+    Lakukan pembagian tahun yang sudah diinputkan dengan angka 100 dan 400
+    Jika Tahun % 100 menghasilkan sisa bagi 0 dan Tahun % 400 menghasilkan sisa bagi bukan 0, maka tampilkan Tahun Bukan Kabisat
+    Jika tidak memenuhi semua kondisi diatas, tampilkan Tahun Kabisat
+
+
+    Pseudocode
+
+    STORE "Tahun"
+    CALCULATE "Tahun" mod 4
+    IF "Tahun" mod 4 ≠ 0 DISPLAY "Tahun Bukan Kabisat"
+    CALCULATE "Tahun" mod 100 AND "Tahun" mod 400
+    IF "Tahun" mod 100 = 0 AND "Tahun" mod 400 ≠ 0 DISPLAY "Tahun Bukan Kabisat"
+    ELSE
+    DISPLAY "Tahun Kabisat"
+
+3. Algoritma Laundry Day
+
+    Siapkan pakaian yang ingin dimasukkan ke mesin cuci
+    Masukkan pakaian ke mesin cuci satu persatu sebanyak 20 kali sampai habis
+    Masukkan Detergen dan Softener pakaian
+    Jalankan Mesin cuci
+    Tunggu sampai selesai
+
+
+    Pseudocode
+ 
+    STORE "Pakaian" with 0
+    WHILE "Pakaian" <=20
+    ADD ""Pakaian" by 1
+    DISPLAY "Proses Laundry"
+    Wait until "Laundry Finish"
+    
+
+4. Algoritma Periksa Kuku
+
+    Siswa/siswi sebanyak 40 orang telah siap dalam kelas
+    Guru akan masuk kedalam kelas untuk berkeliling memeriksa kuku siswa/siswi satu persatu
+    Jika siswa/siswi memiliki kuku yang panjang, maka guru akan menghukum siswa/siswi tersebut
+    Jika tidak memenuhi kondisi diatas maka guru akan memuji siswa/siswi tersebut
+
+    Pseudocode
+    STORE "Kuku Pendek" with 0    
+    STORE "Siswa/Siswi" with 0
+    CALCULATE "Periksa Kuku"
+    WHILE "Siswa/Siswi" <=40
+    ADD "Siswa/Siswi" by 1
+    IF "Siswa/Siswi" times "Periksa Kuku" ≠ 0, DISPLAY "Akan Mendapat Hukuman Guru"
+    ELSE
+    DISPLAY "Akan Mendapat Pujian Guru"

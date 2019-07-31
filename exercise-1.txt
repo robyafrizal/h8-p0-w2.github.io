@@ -53,7 +53,7 @@ Pseudocode Challenge
 
     Pseudocode
  
-    STORE "Pakaian" with 0
+    STORE "Pakaian" with 1
     WHILE "Pakaian" <=20 THEN
         ADD ""Pakaian" by 1
     DISPLAY "Proses Laundry"

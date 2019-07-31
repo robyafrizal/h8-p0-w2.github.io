@@ -1,8 +1,8 @@
-var tanggal = 29;
+var tanggal = tanggal < 32 && tanggal > 0;
 var bulan = 7;
-var tahun = 2019;
+var tahun = tahun < 2201 && tanggal > 1899;
 
-if (tanggal < 32 && tanggal > 0 && tahun < 2201 && tahun >1899) {
+
 switch(bulan) {
     case 1: console.log(tanggal + " Januari " + tahun);
     break;
@@ -31,6 +31,3 @@ switch(bulan) {
     default: console.log("Bulan tidak valid");
     break;
     }
-} else {
-    console.log("Tanggal dan Tahun anda tidak valid");
-}

@@ -3,22 +3,20 @@ Pseudocode Challenge
 
 1. Algoritma Menghitung Resultan Gaya
 
-    Masukkan nilai Massa Benda (m = 600kg)
-    Masukkan nilai Percepatan Benda (a = 2m/s2)
-    Hitung Resultan Gaya menggunakan rumus ΣF = m x a (ΣF = 600kg x 2m/s2)
-    Tampilkan nilai Resultan Gaya (ΣF = 1200 kg.m/s2) sebagai output (keluaran)
+    Masukkan nilai 600kg di Massa Benda
+    Masukkan nilai 2m/s2 di Percepatan Benda
+    Kalikan Massa Benda dan Percepatan Benda
+    Masukkan hasil perkalian tersebut di Resultan Gaya
+    Tampilkan nilai Resultan Gaya sebagai output
 
 
     Pseudocode
 
-    STORE "massa (m)" with 600kg
-    STORE "percepatan (a)" with 2m/s2
-    STORE "ΣF" without any value
-
-    CALCULATE "massa" times "percepatan" use "ΣF = m x a"
-    SET "ΣF" value with calculation result
-
-    DISPLAY result "ΣF = 1200 kg.m/s2"
+    STORE "Massa Benda" with 600kg
+    STORE "Percepatan Benda" with 2m/s2
+    STORE "Resultan Gaya" without any value
+    SET "Resultan Gaya" with "Massa Benda" multiple "Percepatan Benda"
+    DISPLAY "Resultan Gaya"
 
 
 2. Algoritma Tahun Kabisat
@@ -34,44 +32,49 @@ Pseudocode Challenge
     Pseudocode
 
     STORE "Tahun"
-    CALCULATE "Tahun" mod 4
-    IF "Tahun" mod 4 ≠ 0 DISPLAY "Tahun Bukan Kabisat"
-    CALCULATE "Tahun" mod 100 AND "Tahun" mod 400
-    IF "Tahun" mod 100 = 0 AND "Tahun" mod 400 ≠ 0 DISPLAY "Tahun Bukan Kabisat"
+    SET "Tahun" mod 4
+    IF "Tahun" mod 4 ≠ 0 THEN
+        DISPLAY "Tahun Bukan Kabisat"
+    END IF    
+    SET "Tahun" mod 100 AND "Tahun" mod 400
+    IF "Tahun" mod 100 = 0 AND "Tahun" mod 400 ≠ 0 THEN
+        DISPLAY "Tahun Bukan Kabisat"
     ELSE
     DISPLAY "Tahun Kabisat"
+    END IF
 
 3. Algoritma Laundry Day
 
     Siapkan pakaian yang ingin dimasukkan ke mesin cuci
-    Masukkan pakaian ke mesin cuci satu persatu sebanyak 20 kali sampai habis
-    Masukkan Detergen dan Softener pakaian
+    Masukkan pakaian ke mesin cuci satu persatu mulai dari 1
+    Masukkan pakaian sampai mencapai 20 pakaian
     Jalankan Mesin cuci
-    Tunggu sampai selesai
 
 
     Pseudocode
  
     STORE "Pakaian" with 0
-    WHILE "Pakaian" <=20
-    ADD ""Pakaian" by 1
+    WHILE "Pakaian" <=20 THEN
+        ADD ""Pakaian" by 1
     DISPLAY "Proses Laundry"
-    Wait until "Laundry Finish"
     
 
 4. Algoritma Periksa Kuku
 
-    Siswa/siswi sebanyak 40 orang telah siap dalam kelas
-    Guru akan masuk kedalam kelas untuk berkeliling memeriksa kuku siswa/siswi satu persatu
+    Siswa/siswi sebanyak 40 orang
+    Periksa kuku siswa/siswi dimulai dari 1 siswa/siswi
+    Lakukan lagi periksa kuku sampai mencapai 40 siswa/siswi
     Jika siswa/siswi memiliki kuku yang panjang, maka guru akan menghukum siswa/siswi tersebut
     Jika tidak memenuhi kondisi diatas maka guru akan memuji siswa/siswi tersebut
 
     Pseudocode
-    STORE "Kuku Pendek" with 0    
-    STORE "Siswa/Siswi" with 0
-    CALCULATE "Periksa Kuku"
-    WHILE "Siswa/Siswi" <=40
-    ADD "Siswa/Siswi" by 1
-    IF "Siswa/Siswi" times "Periksa Kuku" ≠ 0, DISPLAY "Akan Mendapat Hukuman Guru"
+    STORE "Siswa/Siswi" with 1
+    SET "Periksa Kuku"
+    WHILE "Siswa/Siswi" <=40 THEN
+        SET "Periksa Kuku
+        ADD "Siswa/Siswi" by 1
+    IF "Siswa/Siswi" times "Periksa Kuku" ≠ 0 THEN
+        DISPLAY "Akan Mendapat Hukuman Guru"
     ELSE
-    DISPLAY "Akan Mendapat Pujian Guru"
+        DISPLAY "Akan Mendapat Pujian Guru"
+    END IF

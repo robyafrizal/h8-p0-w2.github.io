@@ -1,6 +1,6 @@
-var tanggal = tanggal < 32 && tanggal > 0;
+var tanggal = 29;
 var bulan = 7;
-var tahun = tahun < 2201 && tanggal > 1899;
+var tahun = 2019;
 
 
 switch(bulan) {
